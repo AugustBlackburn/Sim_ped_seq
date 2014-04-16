@@ -21,6 +21,7 @@ while ($trioline = <INFILE_PED>){
 }
 close INFILE_PED;
 
+print OUTFILE "ID,SEX,KID_COUNT\n";
 $numberofids=scalar(@offspr);
 for($i=0;$i<$numberofids;$i++){
 	$id=@offspr[$i];
