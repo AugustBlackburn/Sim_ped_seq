@@ -16,7 +16,7 @@ while ($line=<INFILE>){
 	push @frequencydistribution, $line;
 }
 
-open (INFILE_PED, $ARGV[3]) || die;
+open (INFILE_PED, $ARGV[2]) || die;
 $header = <INFILE_PED>;
 #Identify founders
 while ($trioline = <INFILE_PED>){
@@ -40,7 +40,7 @@ close INFILE_PED;
 
 ####Create haploid genotypes according to the specified frequency distribution####
 $pop_size = scalar(@founders);###used to be pop_size
-$k_markers = $ARGV[2];
+$k_markers = $ARGV[1];
 $n_chr=$pop_size*2;
 
 for ($j=0;$j<$k_markers;$j++){
@@ -77,7 +77,7 @@ foreach $founder (@founders){
 }
 
 #Initiate dropping
-$crossover_freq=$ARGV[4];
+$crossover_freq=$ARGV[3];
 $numberofids=scalar(@offspr);
 ##@ready holds ids that are ready to be dropped
 @ready=@founders;

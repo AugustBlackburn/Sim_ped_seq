@@ -51,3 +51,6 @@
 ### Arguments are as follows:
 ### ARGV[0] is pedigree file
 ### ARGV[1] is a file to write output too
+
+## Unique_phase.pl
+### Many vairants in WGS data are in perfect linkage disequilibrium with each other. This program finds unique representations from the 'Haploid_geno_phase.csv', which may aid in reducing multiple testing burden in association and/or linkage analysis.
