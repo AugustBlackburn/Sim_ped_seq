@@ -20,4 +20,5 @@ dev.off()
 distro_rounded<-round(distro,digits=0)
 sim<-NULL
 for(i in 1:999){sim<-append(sim,rep((0.001*i),distro_rounded[i]))}
-write(sim,file="./frequency_distribution.csv",sep=',')
+Sim2<-as.matrix(sim)
+write.table(Sim2,file="./frequency_distribution.csv",sep=',',quote=FALSE,col.names=FALSE,row.names=FALSE)
