@@ -4,6 +4,7 @@ This program can be used to simulate pedigrees of random structure
 * $ARGV[0] is a '/' delimited emperical distribution of number of kids starting with 0 going up to 13 (ex. 0/5/3/1/0/0/0/0/0/0/0/0/0/0 would be a ratio of 0:5:3:1 of having 0,1,2, or 3 kids)
 * $ARGV[1] is the number of generations to simulate
 * $ARGV[2] is a '/' delimited emperical distribution of number of partners a person will have kids with starting with 1 and going up to 4 (ex.10/2/1/1 is a ratio of 10:2:1:1 of having 1,2,3, or 4 partners)
+
 ###Additional information
 * To create larger more complex pedigrees, use 'simulate_pedigree_structure.pl' to simulate pedigrees then combine then using 'merge_lineages.pl'
 * Output is written to STDOUT so redirect the output to a file
