@@ -20,4 +20,4 @@ dev.off()
 distro_rounded<-round(distro,digits=0)
 sim<-NULL
 for(i in 1:999){sim<-append(sim,rep((0.001*i),distro_rounded[i]))}
-write(sim,file="/Users/augustb/Desktop/frequency_distribution.csv",sep=',')
+write(sim,file="./frequency_distribution.csv",sep=',')
