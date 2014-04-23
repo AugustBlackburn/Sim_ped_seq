@@ -14,7 +14,10 @@ distro<-myfunction(n1)
 sum<-0
 for(i in 1:999){sum<-sum+distro[i]}
 distro_x<-distro/sum
-plot(n1,distro_x)
+pdf(file="Frequency_distribution.pdf")
+plot(n1,distro_x,xlab="Allele frequency",ylab="Density")
+dev.off()
 distro_rounded<-round(distro,digits=0)
+sim<-NULL
 for(i in 1:999){sim<-append(sim,rep((0.001*i),distro_rounded[i]))}
 write(sim,file="/Users/augustb/Desktop/frequency_distribution.csv",sep=',')
