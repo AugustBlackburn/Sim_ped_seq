@@ -14,10 +14,7 @@ This program can be used to simulate pedigrees of random structure
 This program is used in conjunction with 'simulate_pedigree_structure.pl' to combine two pedigrees to make a more complex pedigree structures.
 
 ###Arguments are as follows:
-* $ARGV[0] and $ARGV[1] are pedigree files to be merged to create a larger, more complex pedigree.
-
-###Additional information
-* Output is written to STDOUT so redirect the output to a file
+* $ARGV[0] and $ARGV[1] are pedigree files to be merged to create a larger, more complex pedigree. Output is written to $ARGV[2].
 
 ## sim_chr_genos.pl
 This program can be used to simulate genotypes according to a user defined emperical distribution, an example distribution is included in the file 'frequency_distribution2.csv'
